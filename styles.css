@@ -15,7 +15,7 @@ main, header{
     padding: 10px;
 }
 
-nav, div{
+nav, #image{
     padding: 20px;
 }
 
@@ -57,15 +57,22 @@ p{
     margin-top: 0;
 }
 
-div{
+#image{
     float: right;
     text-align: center;
 }
 
-div img{
+#image img{
     width: 300px;
 }
 
-div p{
+#image p{
     margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
 }
