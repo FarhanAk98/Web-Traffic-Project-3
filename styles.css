@@ -1,9 +1,8 @@
 :root{
-    --color-one: #093936de;
-    --color-two: #eaeaea;
-    --color-three: #007e46de;
-    --color-four: rgb(237, 227, 217);
-
+    --color-one: #355F2E;
+    --color-two: #f5edd6;
+    --color-three: #A8CD89;
+    --color-four: #F9C0AB;
 }
 
 body{
@@ -11,24 +10,29 @@ body{
     color: var(--color-one);
 }
 
-main, header{
-    padding: 10px;
+nav, #image, main, header, footer{
+    padding: 20px;
 }
 
-nav, #image{
-    padding: 20px;
+nav a, #image, #potm, footer{
+    text-align: center;
+}
+
+footer{
+    background-color: var(--color-three);
+    border-top: solid var(--color-one) 2px;
 }
 
 nav{
     display: flex;
     justify-content: space-evenly;
-    background-color: white;
+    background-color: var(--color-three);
+    border-bottom: solid var(--color-one) 2px;
 }
 
 nav a{
     color: var(--color-one);
     font-weight: bold;
-    text-align: center;
 }
 
 main{
@@ -41,15 +45,10 @@ header{
 }
 
 h1{
-    margin: 0;
     text-decoration: underline;
 }
 
-h2{
-    margin-bottom: 0;
-}
-
-h3{
+h1, h2, h3, footer p{
     margin: 0;
 }
 
@@ -59,7 +58,6 @@ p{
 
 #image{
     float: right;
-    text-align: center;
 }
 
 #image img{
