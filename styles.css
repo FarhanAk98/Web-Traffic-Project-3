@@ -1,9 +1,21 @@
-body{
-    margin: 0;
-    color: #093936de;
+:root{
+    --color-one: #093936de;
+    --color-two: #eaeaea;
+    --color-three: #007e46de;
+    --color-four: rgb(237, 227, 217);
+
 }
 
-nav, main, div{
+body{
+    margin: 0;
+    color: var(--color-one);
+}
+
+main, header{
+    padding: 10px;
+}
+
+nav, div{
     padding: 20px;
 }
 
@@ -14,16 +26,40 @@ nav{
 }
 
 nav a{
-    color: #093936de;
+    color: var(--color-one);
     font-weight: bold;
+    text-align: center;
 }
 
 main{
-    background-color: #f7f7f7;
+    background-color: var(--color-two);
+}
+
+header{
+    background-color: var(--color-four);
+    color: var(--color-one);
+}
+
+h1{
+    margin: 0;
+    text-decoration: underline;
+}
+
+h2{
+    margin-bottom: 0;
+}
+
+h3{
+    margin: 0;
+}
+
+p{
+    margin-top: 0;
 }
 
 div{
     float: right;
+    text-align: center;
 }
 
 div img{
