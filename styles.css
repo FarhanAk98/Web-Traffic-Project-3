@@ -11,8 +11,22 @@ body{
     color: var(--color-one);
 }
 
+#products{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    text-align: center;
+}
+
+#products li{
+    border: solid var(--color-one) 2px;
+    border-radius: 5px;
+    padding: 10px;
+    flex-basis: 600px;
+}
+
 nav, main, header, footer{
-    padding: 20px;
+    padding: 20px 70px;
 }
 
 nav a, #potm, footer{
@@ -94,11 +108,13 @@ p{
 }
 
 @media only screen and (max-width: 600px) {
-    main{
-        display: flex;
+    main, #image, #products{
         flex-direction: column;
     }
-    #image{
-        flex-direction: column;
+    #products li{
+        flex-basis: 30%;
+    }
+    main{
+        display: flex;
     }
 }
